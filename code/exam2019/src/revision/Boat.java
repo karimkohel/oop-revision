@@ -17,6 +17,7 @@ public class Boat extends Vehicle{
     }
 
     Boat(Boat original){
+        // for list use addAll method instead of for loop
         this.engines.addAll(original.engines);
         this.numCrew = original.numCrew;
     }
