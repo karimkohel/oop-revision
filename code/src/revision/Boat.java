@@ -11,12 +11,14 @@ public class Boat extends Vehicle{
 
     }
 
-    public Boat(List<Engine> engines, int numCrew) {
+    public Boat(int speed, String color ,List<Engine> engines, int numCrew) {
+        super(speed,color);
         this.engines = engines;
         this.numCrew = numCrew;
     }
 
     Boat(Boat original){
+        super(original);
         this.engines.addAll(original.engines);
         this.numCrew = original.numCrew;
     }
