@@ -8,12 +8,16 @@ public class Car extends Vehicle{
 
     }
 
+    //copy
     Car(Car origin){
+        super(origin);
         this.fuelCapacity = origin.fuelCapacity;
         this.engine = origin.engine;
     }
 
-    public Car(int fuelCapacity, Engine engine) {
+    //arg based
+    public Car(String color , int speed,int fuelCapacity, Engine engine) {
+        super(color,speed)
         this.fuelCapacity = fuelCapacity;
         this.engine = engine;
     }
