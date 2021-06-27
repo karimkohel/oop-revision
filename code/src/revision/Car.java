@@ -2,7 +2,7 @@ package revision;
 
 public class Car extends Vehicle{
     private int fuelCapacity;
-    Engine engine;
+    private Engine engine;
 
     Car(){
 
