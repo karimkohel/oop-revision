@@ -25,9 +25,16 @@ public class Engine {
         this.hp = hp;
     }
 
+    //arg constructor
     public Engine(int CC, int hp) {
         this.CC = CC;
         this.hp = hp;
+    }
+    
+    //copy constructor
+    public Engine(Engine e){
+        this.CC=e.CC;
+        this.hp=e.hp;
     }
 
     @Override
