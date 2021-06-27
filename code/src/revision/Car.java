@@ -8,6 +8,12 @@ public class Car extends Vehicle{
 
     }
 
+    Car(int fuelCapacity, Engine engine, int speed, String color){
+        super(speed, color);
+        this.fuelCapacity = fuelCapacity;
+        this.engine = engine;
+    }
+
     Car(Car origin){
         this.fuelCapacity = origin.fuelCapacity;
         this.engine = origin.engine;
