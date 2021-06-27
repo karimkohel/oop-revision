@@ -11,6 +11,11 @@ public abstract class Vehicle {
         this.speed = original.speed;
         this.color = original.color;
     }
+    public Vehicle(int speed , String color){
+        this.speed = speed;
+        this.color = color;
+    }
+    
 
     @Override
     public String toString() {
